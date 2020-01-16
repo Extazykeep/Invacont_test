@@ -1,0 +1,202 @@
+@import fonts
+
+body
+	padding: 0
+	margin: 0	
+	font-family: HelveticaNeueCyr-Med
+	//overflow-x: hidden
+
+.container
+	max-width: 80%
+	margin: 0 auto
+//header section styles	
+.head
+	position: relative
+.main-header
+	background-image: url("../img/header_background.png")
+	min-height: 100vh
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	padding-top: 20px
+	display: flex
+	position: relative
+	border-bottom: 5px solid #e45f07
+	h1
+		margin: 40px		
+		color: #fff
+		font-weight: 800
+		font-size: 4em
+		text-align: center
+		font-family: HelveticaNeueCyr-Black
+
+.header-logo
+	display: flex
+	justify-content: center	
+
+.header-circle
+	background-color: #fff
+	width: 320px
+	height: 160px	
+	text-align: center	
+	border-radius: 160px 160px 0 0		
+	img
+		margin-top: 20px
+
+.ellipse	
+	border-top: solid 10px #fff		
+	width: 100%
+	height: 10%
+	position: absolute
+	left: 0
+	top: 150px	
+	border-radius: 50%	
+	pointer-events: none
+	
+.navmenu
+	display: flex	
+	justify-content: center
+	list-style-type: none	
+	margin-top: 0px
+	li			 
+		padding-top: 50px
+		padding: 15px 10px
+		pointer-events: all 
+		margin-left: 2px
+		transition: all 0.3s ease		
+		&:hover
+			background-color: #e45f07
+			border-radius: 5px 0px 5px 5px		
+		a
+			text-transform: uppercase
+			text-decoration: none
+			font-weight: bold
+			color: #fff	
+			font-size: 25px	
+			font-family: NimbusSan-bold
+
+.header-welcome	
+	color: white
+	text-align: center
+	background-color: black
+	margin-top: 10px
+	margin-bottom: 120px
+	opacity: 0.5
+	padding: 3%	
+	font-size: 1.4em
+	font-family: HelveticaNeueCyr-Light
+	span
+		font-size: 3em
+
+// midle section styles
+.main 
+	min-height: 60vh
+	background-image: url("../img/second_background.png")
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	position: relative	
+	.offers
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		position: relative
+		top: -200px	
+		&:nth-child(4), &:last-child
+			justify-content: center
+	.offer
+		display: flex
+		flex-direction: column
+		justify-content: center	
+		align-items: center	
+		width: 33%
+		margin-top: 50px				
+		img
+			width: 80%
+			height: 80%
+			border: 7px solid white
+			object-fit: fill			
+			border-radius: 50%
+			margin-bottom: 32px
+		span
+			color: #fff
+			font-size: 2em
+			opacity: 0.8
+			font-family: HelveticaNeueCyr-Light
+			margin-bottom: 15px
+		button
+			background: transparent
+			color: #fff
+			text-transform: uppercase
+			padding: 16px 30px
+			border-radius: 7px
+			border: 2px solid rgba(160, 170, 150, .5)
+			font-family: Helveticaneuecyr-Bold
+			cursor: pointer
+			transition: all 0.5s ease
+			outline: none
+			&:hover
+				color: #8ec805
+				border-color: #8ec805
+
+
+//footer styles
+.main-footer
+	background-image: url("../img/Footer_background.png")
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	min-height: 90vh
+	position: relative	
+	.description
+		max-width: 50%
+		padding-top: 5%
+		a
+			background: transparent
+			text-transform: uppercase
+			padding: 16px 30px	
+			color: #47890a
+			border-radius: 7px			
+			border: 2px solid #47890a
+			text-decoration: none
+	h2
+		margin: 0
+		font-size: 70px
+		font-family: HelveticaNeueCyr-Black	
+		color: #47890a	
+		&::first-line
+			font-size: 35px			
+			font-family: HelveticaNeueCyr-Thin
+			color: black
+	p
+		font-family: HelveticaNeueCyr-Light
+		line-height: 1.75
+		font-size: 24px
+		margin-bottom: 45px		
+
+.footer-panel
+	min-height: 120px
+	position: absolute	
+	bottom: 0
+	width: 100%	
+	.footer-navigation
+		min-height: 60px
+		background-color: #fff
+		.navmenu
+			padding: 0px
+			margin: 0			
+			li
+				transition: all 0.3s ease 
+				background: transparent
+				&:hover
+					a					
+						color: #8dc705
+			a
+				color: grey				
+	.footer-info
+		min-height: 60px
+		background-color: #e4e4e4
+		display: flex
+		justify-content: space-around		
+		p
+			margin: auto 0
+			display: inline
+
+@import media
